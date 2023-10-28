@@ -1,0 +1,209 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    color: rgb(60, 133, 167);
+}
+.header h2{color: rgb(227, 220, 204) ;}
+.navbar a{
+     font-size: 18px;
+     color: white;
+     text-decoration: none;
+     font-weight: 500;
+     margin-left: 35px;
+     transition: .3s;
+}
+.navbar a:hover{
+    color: rgb(227, 220, 204);
+}
+#active{
+   color: rgb(227, 220, 204);
+}
+.home{
+    height: 100vh;
+    background:linear-gradient(-90deg, rgb(60, 133, 167) 65%, rgb(227, 220, 204) 35%);
+    display: flex;
+    
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10%;
+
+}
+.home h3{
+    color: rgb(60, 133, 167) ;
+}
+.homee{
+    height: 100vh;
+    background:rgb(117, 117, 171);
+    display: flex;
+    
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10%;
+}
+.general{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 35%;
+    height: 45%;
+    background:rgb(227, 220, 204);
+    
+}
+.images {
+    margin: 10px auto;
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 20px;
+}
+.home-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 500px;
+    background:rgb(227, 220, 204);
+    border-radius: 50%;
+    /*border: 25px solid blue;*/
+}
+.home-image img{
+    position: relative;
+    max-width: 350px;
+    max-height: 550px;
+    border-radius: 50%;
+}
+.circular-image {
+    border-radius: 50%;
+    overflow: hidden;
+    width: 370px;
+    height: 370px;
+}
+
+.home-content{
+    max-width: 600px;
+    color: rgb(117, 117, 171);
+    text-align: left;
+}
+.home-content h1{
+    font-size: 55px;
+    line-height: 1.2;
+    color: #fff;
+
+}
+.home-content h3{
+    font-size: 40px;
+    color: rgb(251, 240, 221);
+}
+.home-content p{
+    font-size: 16px;
+    margin-top: 20px;
+    color: #fff;
+}
+
+.social{
+    margin: 25px 0 40px;
+}
+.social a{
+ display: inline-flex;
+ justify-content: center;
+ align-items: center;
+ width:40px ;
+ height: 40px;
+ background:transparent ;
+ border: 2px solid rgb(227, 220, 204);
+ border-radius: 50%;
+ font-size: 20px;
+ color: rgb(227, 220, 204);
+ text-decoration: none;
+}
+.social a:hover{
+    background: rgb(227, 220, 204);
+    color: white;
+    border-color: rgb(227, 220, 204);
+    box-shadow: 0 0 10px rgb(227, 220, 204);
+}
+dd {
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+
+.home-content dl {
+    margin: 0 50;
+    max-width: 400px; /* Adjust the width as needed */
+    /*background: rgb(227, 220, 204);*/
+    padding: 20px;
+    color: #fff;
+}
+.home-content ul {
+    margin: 0 50;
+    max-width: 400px; /* Adjust the width as needed */
+    /*background: rgb(227, 220, 204);*/
+    padding: 20px;
+    color: #fff;
+}
+/* Style the form container */
+.home-content form {
+    background: rgb(227, 220, 204);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Style labels for form fields */
+.home-content form label {
+    display: block; /* Place labels on a new line */
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Style text input fields */
+.home-content form input[type="text"],
+.home-content form input[type="email"],
+.home-content form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid rgb(117, 117, 171);
+    border-radius: 5px;
+}
+
+/* Style the select dropdown */
+.home-content form select {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid rgb(117, 117, 171);
+    border-radius: 5px;
+}
+
+/* Style the submit button */
+.home-content form input[type="submit"] {
+    background: rgb(60, 133, 167);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Style the submit button on hover */
+.home-content form input[type="submit"]:hover {
+    background: rgb(47, 104, 130);
+}
+
